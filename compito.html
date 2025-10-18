@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto DOM e Eventi</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="div1" style="width: 100px; height: 100px; background-color: lightblue;" onclick="handleClick('div1')">
+        Cliccami
+    </div>
+
+    <input type="text" id="input1" placeholder="Scrivi qualcosa" oninput="handleInput()">
+
+    <button id="button1" onclick="handleButtonClick()">Click me</button>
+
+    <select id="select1" onchange="handleSelectChange()">
+        <option value="1">Opzione 1</option>
+        <option value="2">Opzione 2</option>
+        <option value="3">Opzione 3</option>
+    </select>
+
+
+    <p id="text1" onclick="handleTextClick()">Clicca su questo testo</p>
+
+    <textarea id="textarea1" onfocus="handleFocus()" onblur="handleBlur()">Testo iniziale</textarea>
+
+    <a href="#" id="link1" onclick="handleLinkClick(event)">Visita un link</a>
+
+    <form id="form1" onsubmit="handleFormSubmit(event)">
+        <input type="submit" value="Invia">
+    </form>
+
+</body>
+</html>
